@@ -1,0 +1,10 @@
+inputs:     HighPrice(201.5),
+            LowPrice(199.0),
+            setTime(235500);
+
+if Time < setTime then begin
+if close > HighPrice then 
+   	sell this bar;
+if close < LowPrice then
+   	buy this bar;
+end
